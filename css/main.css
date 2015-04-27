@@ -1,0 +1,188 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2015-04-20, 12:05:27
+    Author     : Bonzo
+*/
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+}
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  -ms-filter: 'alpha(opacity=0)';
+  font-size: 200px;
+  direction: ltr;
+  cursor: pointer;
+}
+
+/* Fixes for IE < 8 */
+@media screen\9 {
+  .fileinput-button input {
+    filter: alpha(opacity=0);
+    font-size: 100%;
+    height: 100%;
+  }
+}
+
+a, a:hover, a:visited, a:link, a:focus{
+    text-decoration: none;
+    color: inherit;
+}
+html{
+    height:100%;
+}
+
+body{
+    background-color: #111111;
+    color: #a6a6a6;
+    height: 100%;
+}
+
+.myContainer{
+    width: 1000px;
+    margin: auto;
+    height: 100%;
+}
+
+.buttons{
+    color: white;
+    padding: 5px 0px 20px;
+}
+
+.header{
+    border-bottom: #a6a6a6 solid 1px;
+    text-transform: uppercase;
+}
+
+.boxHeader{
+    color: white;
+    padding: 20px 0px 20px 0px;
+}
+
+.backgroundsContainer{
+    position: relative;
+    height: 100%;
+}
+
+.changeScreen{
+    color: white !important;
+    background-color: #3e3e3e;
+    padding: 14px 26px;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: x-small;
+    font-weight: bold;
+}
+
+.bg{
+    float: left;
+    width: 150px;
+    height: 70px;
+    border: solid 1px grey;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.clear{
+    clear: both;
+}
+
+.button{
+    float: right;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+#text{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: black;
+    color: white;
+}
+
+.uppercase.clear.marginTop .form-control{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 25px;
+    clear: none;
+    display: inline-block;
+    padding: 0px 12px;
+}
+
+.fileinput-button{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: black;
+    color: white;
+    width: 150px;
+    clear: none;
+    display: inline-block;
+    border: 1px dotted #a6a6a6;
+}
+
+.marginTop{
+    margin-top: 17px;
+}
+
+.mySlider{
+    width: 300px;
+    clear: none;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#logo{
+    display: inline-block;
+    clear: none;
+    margin-left: 10px;
+}
+
+.title{
+    width: 100px;
+    display: inline-block;
+}
+
+.active{
+    border: 1px solid goldenrod;
+}
+
+.myContainer .button{
+    margin-bottom: 70px;
+}
+
+.mySlider .ui-slider-range { background: goldenrod; }
+.mySlider .ui-slider-handle { border-color: goldenrod; }
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+    background: #c0b583 !important;
+}
+
+#logoCreator{
+    width: 100%;
+    min-height: 500px;
+    border: 1px solid white;
+}
+
+#logoCreator > p{
+    z-index: 5;
+    width: auto !important;
+}
+
+.sliderPadding{
+    margin-left: 10px;
+}
+
+.optionsMenu{
+    padding: 10px 0px;
+}

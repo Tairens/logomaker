@@ -1,11 +1,12 @@
 <script type="text/template" id="backgroundOption">
     <div class="backgroundsContainer">
-        <div data-background="red" class="bg"></div>
-        <div data-background="black" class="bg"></div>
-        <div data-background="white" class="bg"></div>
-        <div data-background="blue" class="bg"></div>
-        <div data-background="yellow" class="bg"></div>
-        <div data-background="pink" class="bg"></div>
+        <div data-background="red" data-type="bgcolor" class="bg"></div>
+        <div data-background="black" data-type="bgcolor" class="bg"></div>
+        <div data-background="white" data-type="bgcolor" class="bg"></div>
+        <div data-background="blue" data-type="bgcolor" class="bg"></div>
+        <div data-background="yellow" data-type="bgcolor" class="bg"></div>
+        <div data-background="pink" data-type="bgcolor" class="bg"></div>
+        <div data-background="/images/tlo1.jpg" data-type="bgimage" class="bg"></div>
     </div>
     <div class="clear"></div>
     <p class="uppercase">
@@ -38,12 +39,12 @@
     <div class="uppercase marginTop">
         <div class="title">rozmiar</div>
         <div class="mySlider marginTop" data-max="36" data-slide="textSizeValue"></div> 
-        <span id="textSizeValue">1</span>
+        <span class="myValue" id="textSizeValue">0</span>
     </div>
     <div class="uppercase marginTop">
         <div class="title">obrót</div>
         <div class="mySlider" data-max="360" data-slide="rotationValue"></div> 
-        <span class="sliderPadding" id="rotationValue">1</span>
+        <span class="myValue" id="rotationValue">0</span>
     </div>
     <div class="uppercase marginTop">
         <div class="title">styl</div>
@@ -63,20 +64,20 @@
         <div class="title">logo</div>
         <span class="btn fileinput-button">
             <i class="glyphicon glyphicon-plus"></i>
-            <span>Select files...</span>
-            <input id="fileupload" type="file" name="files[]" multiple>
+            <span>Wybierz plik...</span>
+            <input type="file" />
         </span>
-        <a href="#" class="changeScreen uppercase">Dodaj</a>
+        <a href="#" id="addImage" class="changeScreen uppercase">Dodaj</a>
     </div>
     <div class="uppercase clear marginTop">
         <div class="title">rozmiar</div>
-        <div class="mySlider marginTop" id="sizeLogoSlider"></div> 
-        <span class="myValue" id="sizeLogoValue">0</span>
+        <div class="mySlider marginTop" data-slide="sizeLogoSlider"></div> 
+        <span class="myValue" id="sizeLogoSlider">0</span>
     </div>
     <div class="uppercase clear marginTop">
         <div class="title">obrót</div>
-        <div class="mySlider" id="rotateLogoSlider"></div> 
-        <span class="myValue" id="rotateLogoValue">0</span>
+        <div class="mySlider" data-max="360" data-slide="rotateLogoSlider"></div> 
+        <span class="myValue" id="rotateLogoSlider">0</span>
     </div>
     <div class="clear"></div>
     <p class="uppercase">

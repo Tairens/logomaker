@@ -75,7 +75,7 @@ body{
 .changeScreen{
     color: white !important;
     background-color: #3e3e3e;
-    padding: 14px 26px;
+    padding: 12px 26px;
     border-radius: 4px;
     margin-right: 10px;
     font-size: x-small;
@@ -101,11 +101,15 @@ body{
     margin-top: 10px;
 }
 
-#text{
+#textToAdd{
     margin-left: 10px;
     margin-right: 10px;
     background-color: black;
     color: white;
+}
+
+.uppercase{
+    text-transform: uppercase;
 }
 
 .uppercase.clear.marginTop .form-control{
@@ -142,6 +146,13 @@ body{
     margin-left: 10px;
 }
 
+.myValue{
+    position: relative;
+    top: -19px;
+    left: -150px;
+    color: goldenrod;
+}
+
 #logo{
     display: inline-block;
     clear: none;
@@ -170,7 +181,7 @@ body{
 
 #logoCreator{
     width: 100%;
-    min-height: 500px;
+    min-height: 300px;
     border: 1px solid white;
 }
 
@@ -185,4 +196,65 @@ body{
 
 .optionsMenu{
     padding: 10px 0px;
+    border-bottom: #a6a6a6 solid 1px;
+    min-height: 450px;
+    max-height: 450px;
+}
+
+.separator{
+    padding-top: 40px;
+    width: 50px;
+    border-top: solid 2px #c0b583;
+}
+
+#optionsScreen p.uppercase{
+    position: absolute;
+    top: 480px;
+    margin: 0px;
+}
+
+#addText{
+    color: white !important;
+    background-color: #3e3e3e;
+    padding: 14px 26px;
+    border-radius: 4px;
+    margin-left: 10px;
+    font-size: x-small;
+    font-weight: bold;
+}
+
+.uppercase.marginTop .form-control{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 25px;
+    clear: none;
+    display: inline-block;
+    padding: 0px 12px;
+}
+
+.saveButton{
+    padding: 10px 26px;
+    text-align: center;
+    float: right;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    margin: 15px 5px 20px 5px;
+    font-size: 12px;
+    min-width: 130px;
+}
+
+#save1{
+    background-color:  #669114;
+}
+
+#save2{
+    background-color: #7a2121;
+}
+
+.selected{
+
 }

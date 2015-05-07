@@ -22,39 +22,45 @@ and open the template in the editor.
                 <div class="boxHeader uppercase">
                     Zaprojektuj banner:
                 </div>
+                <div class="separator"></div>
                 <div class="buttons uppercase">
                     <a href="#" data-toPosition="backgroundOption" class="changeScreen" data-toggle="tooltip" title="Tło">tło</a>
                     <a href="#" data-toPosition="textOption" class="changeScreen" data-toggle="tooltip" title="Napisy">napisy</a>
                     <a href="#" data-toPosition="logoOption" class="changeScreen" data-toggle="tooltip" title="Logo">logo</a>
-                    <a href="#" data-toPosition="saveOption" class="changeScreen" data-toggle="tooltip" title="Zapisz">zapisz</a>
+                    <a href="#" class="changeScreen" id="saveOption" data-toggle="tooltip" title="Zapisz">zapisz</a>
                 </div>
                 <div id="optionsScreen"></div>
             </div>
+            <div class="boxHeader uppercase">
+                Podgląd:
+            </div>
+            <div class="separator"></div>
             <div id="logoCreator">
-                <p class="uppercase draggable">Marek</p>
-                <img src="images/zapisz.png" class="draggable">
+    
             </div>
-            <div id="preview">
-                
-            </div>
+            
+            <div class="saveButton uppercase" id="save1">zapisz</div>
+            <div class="saveButton uppercase" id="save2">zapisz wzór</div>
+            <div class="clearfix"></div>
+            
+            <?php include_once('js/templates/options.template.php'); ?>
+
+            <script src="js/lib/jquery.min.js"></script>
+            <script src="js/lib/jquery-ui.min.js"></script>
+            <script src="js/lib/underscore.min.js"></script>
+            <script src="js/lib/backbone.min.js"></script>
+            <script src="js/lib/bootstrap.min.js"></script>
+            <script src="js/core/app.js"></script> 
+            <script src="js/core/app.config.js"></script> 
+            <script src="js/views/options.view.js"></script>
+            <script src="js/views/creator.view.js"></script>
+
+            <script type="text/javascript">
+                var router = new APP.Router();
+                Backbone.history.start();
+            </script>            
         </div>
 
-        <?php include_once('js/templates/options.template.php'); ?>
-        <?php include_once('js/templates/creator.template.php'); ?>
-        
-        <script src="js/lib/jquery.min.js"></script>
-        <script src="js/lib/jquery-ui.min.js"></script>
-        <script src="js/lib/underscore.min.js"></script>
-        <script src="js/lib/backbone.min.js"></script>
-        <script src="js/lib/bootstrap.min.js"></script>
-        <script src="js/core/app.js"></script> 
-        <script src="js/core/app.config.js"></script> 
-        <script src="js/views/options.view.js"></script>
-        <script src="js/views/creator.view.js"></script>
-        
-        <script type="text/javascript">
-            var router = new APP.Router();
-            Backbone.history.start();
-        </script>   
+
     </body>
 </html>
